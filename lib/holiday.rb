@@ -82,7 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
       temp = dates.to_s
       temp =temp.sub(/[_]/, " ")
       temp1 = supply.join(", ") if supply.size >1
-      puts "  #{temp.capitalize}: #{supply.join(", ")}"
+      puts "  #{temp.capitalize}: #{temp1}"
     end
   end
 
