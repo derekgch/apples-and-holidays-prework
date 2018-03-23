@@ -75,11 +75,13 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   temp = ""
+  temp1 = ""
   holiday_hash.each do |seasons,holidays|
     puts "#{seasons.capitalize}:"
     holidays.each do |dates, supply|
       temp = dates.to_s
       temp =temp.sub(/[_]/, " ")
+      temp1 = supply.join(", ") if supply.size >1
       puts "  #{temp.capitalize}: #{supply.join(", ")}"
     end
   end
