@@ -81,7 +81,8 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |dates, supply|
       temp = dates.to_s
       temp =temp.sub(/[_]/, " ")
-      temp1 = supply.join(", ") if supply.size >1
+      temp1 = supply.join(", ")
+      temp1 = supply.join("") if supply.size >1
       puts "  #{temp.capitalize}: #{temp1}"
     end
   end
