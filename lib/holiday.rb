@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |dates, supply|
       temp = dates.to_s
       temp =temp.sub(/[_]/, " ")
-      if supply.size >2
+      if supply.size >1
         temp1 = supply.join(", ")
       else
         temp1 = supply.join("")
