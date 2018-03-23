@@ -83,9 +83,8 @@ def all_supplies_in_holidays(holiday_hash)
       temp = ""
       temp_a = dates.to_s.split('_')
       temp_a.each do |word|
-        temp << word.capitalize
+        temp << word.capitalize+" "
       end
-
 
       if supply.size >1
         temp1 = supply.join(", ")
