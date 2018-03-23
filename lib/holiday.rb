@@ -85,7 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
       if supply.size >1
         temp1 = supply.join(", ")
       else
-        temp1 = supply.flatten
+        temp1 = supply.join
       end
 
       puts "  #{temp.capitalize}: #{temp1}"
