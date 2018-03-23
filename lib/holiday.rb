@@ -92,7 +92,7 @@ def all_supplies_in_holidays(holiday_hash)
         temp1 = supply.join
       end
 
-      puts "  #{temp.capitalize}: #{temp1}"
+      puts "  #{temp}: #{temp1}"
     end
 
   end
