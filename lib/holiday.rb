@@ -80,7 +80,11 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{seasons.capitalize}:"
     holidays.each do |dates, supply|
       temp = dates.to_s
-      temp = temp.sub(/[_]/, " ")
+      temp_a = temp.split('')
+      temp_a.each do |word|
+        word = word.capitalize
+      end
+      temp = temp_a.join(" ")
 
       if supply.size >1
         temp1 = supply.join(", ")
